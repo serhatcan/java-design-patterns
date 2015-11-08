@@ -45,7 +45,7 @@ public class GroupViewBuilder implements ViewBuilder {
     }
 
     public void addPurpose(String purpose) {
-        addressView.setPhoneNumber(purpose);
+        addressView.setPurpose(purpose);
     }
 
     public void addMembers(Map<String, String> members) {
