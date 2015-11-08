@@ -14,9 +14,11 @@ public class PrototypePatternTest {
     public void cloneTest() throws CloneNotSupportedException {
 
         Secretary secretary = new Secretary("2", "Secretary", "Secretary Street", "5");
-        Secretary clonedSecretary = secretary.clone();
+        Secretary clonedSecretary = (Secretary) secretary.clone();
 
         assertNotEquals(secretary, clonedSecretary);
+        assertEquals(secretary.getEmployeeId(), clonedSecretary.getEmployeeId());
+        assertEquals(secretary.getName(), clonedSecretary.getName());
 
         System.out.println("Prototype created to use different object from already created object.");
     }
