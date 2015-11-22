@@ -10,7 +10,6 @@ import DecoratorAndProxy.MessageWriter.MessageWriterImp;
 public class MessageWriterEncryptionProxy extends MessageWriterProxy {
 
     private String key;
-    private String message;
 
     public MessageWriterEncryptionProxy(String key, String message) {
         super(message);
