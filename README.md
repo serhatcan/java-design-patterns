@@ -8,3 +8,6 @@ Gang of four design pattern examples. This repository containes implementation e
  - Builder
 
 ### Structural Design Patterns
+ - Adapter
+ - Decorator
+ - Proxy
